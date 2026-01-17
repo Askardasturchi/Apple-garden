@@ -10,8 +10,7 @@ body {
     background: #f0fdf4;
 }
 
-/* 🌿 ORQA FON RASMI
-   images/hero-bg.jpg joylashtirasan */
+/* 🌿 ORQA FON RASMI */
 .nature-background {
     position: fixed;
     inset: 0;
@@ -26,6 +25,7 @@ header {
     padding: 10px 20px;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .header-container {
@@ -46,6 +46,7 @@ header {
     border: none;
     padding: 8px 16px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 /* ===== HERO ===== */
@@ -55,8 +56,8 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    color: white;
     text-align: center;
+    color: white;
 }
 
 .hero-overlay {
@@ -70,10 +71,29 @@ header {
     padding: 20px;
 }
 
+/* 🌿 Tabiat qo‘ynidagi mazali taomlar yozuvi */
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    padding: 20px 40px;
+    background: rgba(5, 150, 105, 0.9); /* yashil fon */
+    border-radius: 15px;
+    background-image: url("images/hero-text-bg.jpg"); /* agar yozuv foniga rasm qo‘ymoqchi bo‘lsangiz */
+    background-size: cover;
+    background-position: center;
+}
+
 /* ===== MENYU ===== */
 .menu-section {
     padding: 30px 15px;
     text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 28px;
+    color: #059669;
+    margin-bottom: 20px;
 }
 
 .menu-grid {
@@ -86,6 +106,7 @@ header {
     background: white;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .menu-item img {
@@ -105,11 +126,17 @@ header {
     border: none;
     padding: 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 /* ===== DESKTOP ===== */
 @media (min-width: 768px) {
     .menu-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+        padding: 30px 60px;
     }
 }
