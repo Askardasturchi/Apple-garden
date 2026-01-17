@@ -5,142 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Garden Restaurant</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* ===== UMUMIY ===== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background: #f0fdf4;
-        }
-
-        /* ORQA FON */
-        .hero-background {
-            position: fixed;
-            inset: 0;
-            background: url("images/hero-bg.jpg") center/cover no-repeat;
-            opacity: 0.3;
-            z-index: -1;
-        }
-
-        /* HEADER HERO BO'LIM */
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-
-        .hero-overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(5, 150, 105, 0.7);
-            z-index: 0;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-content h1 {
-            font-size: 48px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .hero-content p {
-            font-size: 20px;
-            margin-bottom: 40px;
-        }
-
-        /* ANIMATSIYALI TUGMALAR */
-        .hero-buttons {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .hero-buttons a {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            background: linear-gradient(135deg, #10b981, #059669);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-buttons a::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: rgba(255,255,255,0.2);
-            transform: skewX(-20deg);
-            transition: all 0.5s ease;
-        }
-
-        .hero-buttons a:hover::before {
-            left: 200%;
-        }
-
-        .hero-buttons a:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            .hero-content h1 {
-                font-size: 36px;
-            }
-            .hero-content p {
-                font-size: 18px;
-            }
-            .hero-buttons a {
-                padding: 12px 25px;
-                font-size: 16px;
-            }
-        }
-
-    </style>
 </head>
 <body>
     <!-- ORQA FON -->
     <div class="hero-background"></div>
 
-    <!-- HERO -->
+    <!-- HERO BO'LIM -->
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Apple Garden Restaurant</h1>
             <p>Tabiat qo‘ynidagi mazali taomlar</p>
 
-            <!-- ANIMATSIYALI TUGMALAR -->
             <div class="hero-buttons">
-                <a href="#" id="menu-btn">Menyu</a>
-                <a href="#" id="team-btn">Xodimlar</a>
-                <a href="#" id="gallery-btn">Rasmlar</a>
-                <a href="#" id="contact-btn">Aloqa</a>
+                <a href="#" data-target="menu.html" class="animated-btn">Menyu</a>
+                <a href="#" data-target="team.html" class="animated-btn">Xodimlar</a>
+                <a href="#" data-target="gallery.html" class="animated-btn">Rasmlar</a>
+                <a href="#" data-target="contact.html" class="animated-btn">Aloqa</a>
             </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
