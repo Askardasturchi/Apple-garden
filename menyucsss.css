@@ -68,7 +68,11 @@ header {
 
 .hero-content {
     position: relative;
-    padding: 20px;
+    padding: 40px 60px;
+    background: url("images/menu_orqafon.png") center/cover no-repeat;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: fadeZoom 1.5s ease;
 }
 
 /* 🌿 Tabiat qo‘ynidagi mazali taomlar yozuvi */
