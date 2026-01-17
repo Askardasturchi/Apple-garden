@@ -1,9 +1,10 @@
-// Tugma bosilganda boshqa sahifaga yo'naltirish
-document.querySelectorAll('.animated-btn').forEach(button => {
-    button.addEventListener('click', function(e){
-        e.preventDefault(); // Hozircha # ishlatamiz
-        const target = this.getAttribute('data-target');
-        // Keyinchalik boshqa sahifaga yo'naltirish
-        window.location.href = target;
+// Ideal hover va ripple animation tayyor
+document.querySelectorAll('.animated-btn').forEach(btn => {
+    btn.addEventListener('click', e => {
+        // Agar href="#" bo'lsa keyinchalik JS orqali target yo'naltirish mumkin
+        const href = btn.getAttribute('href');
+        if(href && href !== "#"){
+            window.location.href = href; // Menyu.html yoki boshqa sahifa
+        }
     });
 });
