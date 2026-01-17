@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Apple Garden Restorani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS ulanish -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Iconlar uchun -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- 🌿 Tabiat fon rasmi (CSS da images/hero-bg.jpg qo‘yiladi) -->
+<div class="nature-background"></div>
+
+<!-- 🔝 HEADER -->
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+            <div class="logo-text">Apple Garden</div>
+        </div>
+
+        <button class="cart-btn" id="cartBtn">
+            <i class="fas fa-shopping-cart"></i>
+            Savatcha
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+    </div>
+</header>
+
+<!-- 🌄 HERO -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Tabiat qo‘ynidagi<br>mazali taomlar</h1>
+        <p>Dam oling, rohatlaning, mazadan bahra oling</p>
+    </div>
+</section>
+
+<!-- 🍽 MENYU -->
+<section class="menu-section">
+    <h2>Bizning Menyu</h2>
+    <div class="menu-grid" id="menuGrid">
+        <!-- Taomlar JS orqali chiqadi -->
+    </div>
+</section>
+
+<!-- ℹ️ ABOUT -->
+<section class="about-section">
+    <h2>Apple Garden haqida</h2>
+    <p>
+        Restoranimiz tabiat bag‘rida joylashgan bo‘lib,
+        sokin muhit va mazali taomlarni taklif etadi.
+    </p>
+</section>
+
+<!-- 🔻 FOOTER -->
+<footer>
+    <p>© 2026 Apple Garden. Barcha huquqlar himoyalangan.</p>
+</footer>
+
+<!-- JS ulanish -->
+<script src="script.js"></script>
+</body>
+</html>
