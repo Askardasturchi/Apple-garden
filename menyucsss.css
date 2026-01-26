@@ -117,7 +117,7 @@ header {
     position: relative;
     z-index: 1;
     padding: 40px 60px;
-    background: url("images/menu_orqafon.png") center / cover no-repeat;
+    background: url("images/FON.jpg") center / cover no-repeat;
     border-radius: 25px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.35);
     animation: fadeZoom 1.4s ease forwards;
